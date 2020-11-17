@@ -3,19 +3,18 @@ interactions:
     body: null
     headers:
       Accept:
-      - application/json
+      - '*/*'
       Accept-Encoding:
       - gzip, deflate
       Connection:
       - keep-alive
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.14 msrest_azure/0.4.34
-        azure-mgmt-keyvault/2.2.0 Azure-SDK-For-Python
+      - azsdk-python-azure-mgmt-keyvault/8.0.0 Python/3.8.5 (macOS-10.15.7-x86_64-i386-64bit)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.KeyVault/vaults/batchxtk3agb5zuivqarycco?api-version=2019-09-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.KeyVault/vaults/batchl7ecvtmeqmmakbvr3ey?api-version=2019-09-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.KeyVault/vaults/batchxtk3agb5zuivqarycco","name":"batchxtk3agb5zuivqarycco","type":"Microsoft.KeyVault/vaults","location":"westcentralus","tags":{},"properties":{"sku":{"family":"A","name":"standard"},"tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47","accessPolicies":[{"tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47","objectId":"f520d84c-3fd3-4cc8-88d4-2ed25b00d27a","permissions":{"keys":["all"],"secrets":["all"]}}],"enabledForDeployment":true,"enabledForDiskEncryption":true,"enabledForTemplateDeployment":true,"enableSoftDelete":true,"vaultUri":"https://batchxtk3agb5zuivqarycco.vault.azure.net/","provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.KeyVault/vaults/batchl7ecvtmeqmmakbvr3ey","name":"batchl7ecvtmeqmmakbvr3ey","type":"Microsoft.KeyVault/vaults","location":"westcentralus","tags":{},"properties":{"sku":{"family":"A","name":"standard"},"tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47","accessPolicies":[{"tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47","objectId":"f520d84c-3fd3-4cc8-88d4-2ed25b00d27a","permissions":{"keys":["all"],"secrets":["all"]}}],"enabledForDeployment":true,"enabledForDiskEncryption":true,"enabledForTemplateDeployment":true,"enableSoftDelete":true,"vaultUri":"https://batchl7ecvtmeqmmakbvr3ey.vault.azure.net/","provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -24,7 +23,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 29 May 2020 03:11:00 GMT
+      - Tue, 17 Nov 2020 22:09:41 GMT
       expires:
       - '-1'
       pragma:
@@ -42,7 +41,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-keyvault-service-version:
-      - 1.1.0.281
+      - 1.1.131.0
       x-powered-by:
       - ASP.NET
     status:
@@ -63,7 +62,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.14 msrest_azure/0.4.34
+      - python/3.8.5 (macOS-10.15.7-x86_64-i386-64bit) msrest/0.6.19 msrest_azure/0.6.4
         azure-mgmt-batch/9.0.0 Azure-SDK-For-Python
       accept-language:
       - en-US
@@ -72,7 +71,7 @@ interactions:
   response:
     body:
       string: '{"error":{"code":"InvalidRequestBody","message":"The specified Request
-        Body is not syntactically valid.\nRequestId:00fb2b02-6023-4a60-8135-ce46fb0bc585\nTime:2020-05-29T03:11:02.8471169Z","target":"BatchAccount","details":[{"code":"Reason","message":"keyVaultReference
+        Body is not syntactically valid.\nRequestId:700cc94f-9952-44bc-aa87-d9add29da8b7\nTime:2020-11-17T22:09:43.1929164Z","target":"BatchAccount","details":[{"code":"Reason","message":"keyVaultReference
         must be set if poolAllocationMode is specified as ''UserSubscription'' on
         a PUT request"}]}}'
     headers:
@@ -83,7 +82,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 29 May 2020 03:11:03 GMT
+      - Tue, 17 Nov 2020 22:09:43 GMT
       expires:
       - '-1'
       pragma:
@@ -100,10 +99,10 @@ interactions:
       code: 400
       message: The specified Request Body is not syntactically valid.
 - request:
-    body: 'b''b\''{"location": "westcentralus", "properties": {"poolAllocationMode":
-      "UserSubscription", "keyVaultReference": {"id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.KeyVault/vaults/batchxtk3agb5zuivqarycco",
-      "url": "https://batchxtk3agb5zuivqarycco.vault.azure.net/"}, "publicNetworkAccess":
-      "Enabled"}}\'''''
+    body: '{"location": "westcentralus", "properties": {"poolAllocationMode": "UserSubscription",
+      "keyVaultReference": {"id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.KeyVault/vaults/batchl7ecvtmeqmmakbvr3ey",
+      "url": "https://batchl7ecvtmeqmmakbvr3ey.vault.azure.net/"}, "publicNetworkAccess":
+      "Enabled"}}'
     headers:
       Accept:
       - application/json
@@ -116,7 +115,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.14 msrest_azure/0.4.34
+      - python/3.8.5 (macOS-10.15.7-x86_64-i386-64bit) msrest/0.6.19 msrest_azure/0.6.4
         azure-mgmt-batch/9.0.0 Azure-SDK-For-Python
       accept-language:
       - en-US
@@ -131,11 +130,11 @@ interactions:
       content-length:
       - '0'
       date:
-      - Fri, 29 May 2020 03:11:05 GMT
+      - Tue, 17 Nov 2020 22:09:46 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.Batch/batchAccounts/batch94171201/operationResults/8240d297-9c28-419e-98e6-0cc716099d34?api-version=2020-05-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.Batch/batchAccounts/batch94171201/operationResults/f1663bce-ae9b-49c0-9664-e0a80d4ba68d?api-version=2020-05-01
       pragma:
       - no-cache
       server:
@@ -159,13 +158,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python/3.7.3 (Windows-10-10.0.18362-SP0) msrest/0.6.14 msrest_azure/0.4.34
+      - python/3.8.5 (macOS-10.15.7-x86_64-i386-64bit) msrest/0.6.19 msrest_azure/0.6.4
         azure-mgmt-batch/9.0.0 Azure-SDK-For-Python
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.Batch/batchAccounts/batch94171201/operationResults/8240d297-9c28-419e-98e6-0cc716099d34?api-version=2020-05-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.Batch/batchAccounts/batch94171201/operationResults/f1663bce-ae9b-49c0-9664-e0a80d4ba68d?api-version=2020-05-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.Batch/batchAccounts/batch94171201","name":"batch94171201","type":"Microsoft.Batch/batchAccounts","location":"westcentralus","properties":{"accountEndpoint":"batch94171201.westcentralus.batch.azure.com","provisioningState":"Succeeded","dedicatedCoreQuotaPerVMFamilyEnforced":false,"poolQuota":100,"activeJobAndJobScheduleQuota":300,"poolAllocationMode":"UserSubscription","keyVaultReference":{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.KeyVault/vaults/batchxtk3agb5zuivqarycco","url":"https://batchxtk3agb5zuivqarycco.vault.azure.net/"},"publicNetworkAccess":"Enabled","encryption":{"keySource":"Microsoft.Batch"}},"identity":{"type":"None"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.Batch/batchAccounts/batch94171201","name":"batch94171201","type":"Microsoft.Batch/batchAccounts","location":"westcentralus","properties":{"accountEndpoint":"batch94171201.westcentralus.batch.azure.com","provisioningState":"Succeeded","dedicatedCoreQuotaPerVMFamilyEnforced":false,"poolQuota":100,"activeJobAndJobScheduleQuota":300,"poolAllocationMode":"UserSubscription","keyVaultReference":{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_batch_test_mgmt_batch_byos_account94171201/providers/Microsoft.KeyVault/vaults/batchl7ecvtmeqmmakbvr3ey","url":"https://batchl7ecvtmeqmmakbvr3ey.vault.azure.net/"},"publicNetworkAccess":"Enabled","encryption":{"keySource":"Microsoft.Batch"}},"identity":{"type":"None"}}'
     headers:
       cache-control:
       - no-cache
@@ -174,13 +173,13 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 29 May 2020 03:11:29 GMT
+      - Tue, 17 Nov 2020 22:10:02 GMT
       etag:
-      - '"0x8D8037DFBFD84B7"'
+      - '"0x8D88B4587D05A89"'
       expires:
       - '-1'
       last-modified:
-      - Fri, 29 May 2020 03:11:30 GMT
+      - Tue, 17 Nov 2020 22:10:02 GMT
       pragma:
       - no-cache
       server:

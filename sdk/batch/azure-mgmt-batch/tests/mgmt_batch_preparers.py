@@ -47,13 +47,13 @@ class KeyVaultPreparer(AzureMgmtPreparer):
             self.client = self.create_mgmt_client(
                 azure.mgmt.keyvault.KeyVaultManagementClient)
             group = self._get_resource_group(**kwargs)
-            self.resource = self.client.vaults.create_or_update(
+            self.resource = self.client.vaults.begin_create_or_update(
                 group.name,
                 name,
                 {
                     'location': self.location,
                     'properties': {
-                        'sku': {'name': 'standard'},
+                        'sku': {'family': 'A', 'name': 'standard'},
                         'tenant_id': "72f988bf-86f1-41af-91ab-2d7cd011db47",
                         'enabled_for_deployment': True,
                         'enabled_for_disk_encryption': True,
